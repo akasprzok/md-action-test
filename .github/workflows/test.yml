@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install the Massdriver CLI 
-        uses: massdriver-cloud/actions/setup@v2
+        uses: massdriver-cloud/actions/setup@v2.1
       - name: Use the Massdriver CLI 
         run: mass help
