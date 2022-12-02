@@ -1,0 +1,15 @@
+name: 'test'
+on: 
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install the Massdriver CLI 
+        uses: massdriver-cloud/actions/setup@v2
+      - name: Use the Massdriver CLI 
+        run: mass help
